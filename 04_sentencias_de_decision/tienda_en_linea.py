@@ -11,7 +11,7 @@ if vip == "si" and compra >= 1000:
     print(f"eres miembro vip: {vip}")
     print("tienes un descuento del 10%")
     print(f"tu compra es de {compra} y queda en: ${diez_porciento}" )
-elif vip == "si" and compra > 1000:
+elif vip == "si" and compra < 1000:
     print(f"eres miembro vip: {vip}")
     print("tienes un descunto del 5%")
     print(f"tu compra es de {compra} y queda en: ${cinco_porciento}" )
