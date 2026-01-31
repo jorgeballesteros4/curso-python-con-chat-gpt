@@ -5,10 +5,12 @@ print("*** Sistemas de Envios ***")
 destino = input("el envio es nacinal internacional: nacional/internacional  ")
 peso = float(input("cuantos kilogramos pesa el paquete "))
 
-nacional = 10 * peso
-internacional = 20 * peso
+nacio = peso * 10
+inter = peso * 20
 
-if nacional == destino:
-    print(f"El valor del envio nacional es de: ${nacional}")
-elif destino == internacional:
-    print(f"Ele valor del envio internacional es de: ${internacional}  ")    
+if destino == "nacional":
+    print(f"El valor del envio nacional es de: ${nacio}")
+elif destino == "internacional":
+    print(f"Ele valor del envio internacional es de: ${inter}  ")    
+else:
+    print("debes de indicar si es nacional o internaciona y el peso del paquete")    
