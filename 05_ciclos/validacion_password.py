@@ -1,12 +1,11 @@
-print("*** Validacion de password ***")
+print("*** Validación de password ***")
 
-password = input("ingrese un password de minimo 6 digitos: ")
+#le preguntamos al usurario que itrodusaca una nueva contraseña 
 
-while len(password)< 6:
-    
-    print("Tu password no es correcto")
-
-    password = input("ingrese un password de minimo 6 digitos: ")
-    print("Tu password es correcto")    
+password = input("Introdusca nueva contraseña de almenos 6 digitos: ")
 
 
+while len(password) < 6:
+    print("incorrecto la contraseña debe de ser al menos de 6 digitos")
+    password = input("Introdusca nueva contraseña de almenos 6 digitos: ")
+print("tu contraseña es correcta ")    
