@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as google_ia
 from PIL import Image
 import os
-import config
+
 
 # --- 1. CONFIGURACIÓN DE LA PÁGINA ---
 st.set_page_config(
@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # Conectamos la llave mágica de Gemini
-google_ia.configure(api_key=config.LLAVE_SECRETA)
+google_ia.configure(api_key=st.secrets["LLAVE_SECRETA"])
 
 # Buscamos la carpeta exacta donde está guardado este archivo
 directorio_actual = os.path.dirname(os.path.abspath(__file__))
