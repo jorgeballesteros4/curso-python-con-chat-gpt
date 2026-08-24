@@ -1,0 +1,3 @@
+C:\Users\F.BALLESTEROS\AppData\Local\Programs\Python\Python313\python.exe -m streamlit run app.pystreamlit
+google-generativeai
+pillow
